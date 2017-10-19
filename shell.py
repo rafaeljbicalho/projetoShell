@@ -55,17 +55,17 @@ class MyPrompt(Cmd):
                     s.do_listar(args)
                     time.sleep(4)
             else:
-                print "Não há comandos para excutar"
+                print "Não há comandos para executar"
         print "Leitura Concluída"
 
-    # função para exibir data e horário ao usuário
+    # função para exibir data e horário
     def do_data(self, args):
         """ Comando para exibir a data """
         call(["date"])
 
 if __name__ == '__main__':
     prompt = MyPrompt()
-    # vamos abrir o aquivo prompt para qual nome será exibido no cmd
+    # abre arquivo para verificar qual o nome do prompt
     with open('prompt.txt', 'r') as fd:
         novo = fd.read().strip()
     prompt.prompt = novo
