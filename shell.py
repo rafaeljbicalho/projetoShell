@@ -58,10 +58,10 @@ class MyPrompt(Cmd):
                 print "Não há comandos para excutar"
         print "Leitura Concluída"
 
-# if __name__ == '__main__':
-#     prompt = MyPrompt()
-#     prompt.prompt = 'Teste@Shell> '
-#     prompt.cmdloop('Iniciando Shell...')
+    # função para exibir data e horário ao usuário    
+    def do_data(self, args):
+        """ Comando para exibir a data na sala"""
+        call(["date"])
 
 if __name__ == '__main__':
     prompt = MyPrompt()
