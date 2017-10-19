@@ -1,7 +1,0 @@
-{
-	"comandos": [{
-		"hello": "ola",
-                "listar": "listar"
-	}]
-
-}
