@@ -48,19 +48,19 @@ class MyPrompt(Cmd):
                 print "Vou dar boas vindas"
                 s = MyPrompt()
                 s.do_ola(args)
-                time.sleep(2)
-            elif teste['comandos'][0]['hello'] == "listar":
-                print "Vou listar arquivos"
-                s = MyPrompt()
-                s.do_listar(args)
-                time.sleep(2)
+                time.sleep(4)
+                if teste['comandos'][0]['listar'] == "listar":
+                    print "Vou listar arquivos"
+                    s = MyPrompt()
+                    s.do_listar(args)
+                    time.sleep(4)
             else:
                 print "Não há comandos para excutar"
         print "Leitura Concluída"
 
-    # função para exibir data e horário ao usuário    
+    # função para exibir data e horário ao usuário
     def do_data(self, args):
-        """ Comando para exibir a data na sala"""
+        """ Comando para exibir a data """
         call(["date"])
 
 if __name__ == '__main__':
