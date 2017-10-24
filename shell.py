@@ -4,6 +4,7 @@ from subprocess import call
 import os
 import json
 import time
+ssh_chamada= root@192
 
 class MyPrompt(Cmd):
     # função de boas vindas ao usuário
@@ -47,7 +48,7 @@ class MyPrompt(Cmd):
             if teste['comandos'][0]['hello'] == "ola":
                 print "Vou dar boas vindas"
                 s = MyPrompt()
-                s.do_ola(args)
+                s.do_ola(args) # vai chamar o ola
                 time.sleep(4)
                 if teste['comandos'][0]['listar'] == "listar":
                     print "Vou listar arquivos"

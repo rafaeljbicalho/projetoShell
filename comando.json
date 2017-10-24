@@ -1,7 +1,7 @@
 {
 	"comandos": [{
-		"hello": "teste",
-                "listar": "azul"
+		"hello": "ola",
+                "listar": "listar"
 	}]
 
 }
