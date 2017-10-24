@@ -4,7 +4,6 @@ from subprocess import call
 import os
 import json
 import time
-ssh_chamada= root@192
 
 class MyPrompt(Cmd):
     # função de boas vindas ao usuário
